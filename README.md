@@ -1,4 +1,4 @@
-# Microsoft Agent Framework In Action
+# Microsoft Agent Framework Samples
 
 A comprehensive hands-on guide to building intelligent agents using the Microsoft Agent Framework. This repository contains practical examples, tutorials, and code samples that demonstrate how to create powerful AI agents using both Python and .NET implementations.
 
