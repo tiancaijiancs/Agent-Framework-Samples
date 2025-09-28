@@ -70,7 +70,7 @@ dotnet build agent-framework-dotnet.slnx
 
 ## 🚀 Quick Start
 
-### 1. Environment Setup
+### Environment Setup
 
 Create a `.env` file in the root directory with your configurations:
 
@@ -90,61 +90,6 @@ FOUNDRY_PROJECT_ENDPOINT=your_foundry_endpoint
 FOUNDRY_MODEL_DEPLOYMENT_NAME=your_model_name
 ```
 
-### 2. Run Your First Agent (Python)
-
-```python
-from agent_framework.openai import OpenAIChatClient
-from agent_framework import ChatAgent
-from openai import AsyncOpenAI
-import os
-
-# Initialize client
-client = AsyncOpenAI(
-    api_key=os.environ.get("GITHUB_TOKEN"), 
-    base_url=os.environ.get("GITHUB_ENDPOINT"),
-)
-
-# Create chat client
-openai_chat_client = OpenAIChatClient(
-    async_client=client, 
-    ai_model_id=os.environ.get("GITHUB_MODEL_ID")
-)
-
-# Create agent
-agent = ChatAgent(
-    chat_client=openai_chat_client,
-    instructions="You are a helpful AI assistant.",
-)
-
-# Run the agent
-response = await agent.run("Hello, how can you help me?")
-print(response.messages[-1].contents[0].text)
-```
-
-### 3. Run Your First Agent (.NET)
-
-```csharp
-using Azure.AI.Agents.Persistent;
-using Azure.Identity;
-using Microsoft.Extensions.AI.Agents;
-
-var endpoint = Environment.GetEnvironmentVariable("FOUNDRY_PROJECT_ENDPOINT");
-var modelId = Environment.GetEnvironmentVariable("FOUNDRY_MODEL_DEPLOYMENT_NAME");
-
-var persistentAgentsClient = new PersistentAgentsClient(endpoint, new AzureCliCredential());
-
-var agentMetadata = await persistentAgentsClient.Administration.CreateAgentAsync(
-    model: modelId,
-    name: "MyFirstAgent",
-    instructions: "You are a helpful AI assistant."
-);
-
-AIAgent agent = await persistentAgentsClient.GetAIAgentAsync(agentMetadata.Value.Id);
-AgentThread thread = agent.GetNewThread();
-
-var response = await agent.RunAsync("Hello, how can you help me?", thread);
-Console.WriteLine(response);
-```
 
 ## 📚 Tutorial Progression
 
