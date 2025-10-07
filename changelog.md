@@ -1,5 +1,31 @@
 # Change Log - Agent Framework Samples
 
+## 2025-10-07
+
+
+#### Python Samples Update
+
+***Folder*** - *00.ForBeginners/05-agentic-rag/code_samples*
+
+| File | Changes Made |
+|------|--------------|
+| `python-agent-framework-aifoundry-file-search.ipynb` | • Updated Azure AI Foundry file search integration<br>• Enhanced document processing with vector store management<br>• Improved RAG capabilities with `HostedFileSearchTool`<br>• Updated agent creation with persistent file search tools |
+
+***Folder*** - *03.ExploerAgentFramework/code_samples/python*
+
+| File | Changes Made |
+|------|--------------|
+| `03-python-agent-framework-aifoundry.ipynb` | • Updated Azure AI Foundry basic agent integration<br>• Enhanced agent lifecycle management<br>• Improved `AzureAIAgentClient` initialization patterns<br>• Updated async context management for agents |
+
+***Folder*** - *04.Tools/code_samples/python/foundry*
+
+| File | Changes Made |
+|------|--------------|
+| `01.python-agent-framework-aifoundry-vision.ipynb` | • Updated Azure AI Foundry vision capabilities<br>• Enhanced image processing with base64 encoding<br>• Improved multimodal content handling<br>• Updated vision agent creation with furniture consultation features |
+| `02.python-agent-framework-aifoundry-code-interpreter.ipynb` | • Updated Azure AI Foundry code interpreter integration<br>• Enhanced code execution capabilities<br>• Improved `HostedCodeInterpreterTool` implementation<br>• Updated mathematical computation features |
+| `03.python-agent-framework-aifoundry-binggrounding.ipynb` | • Updated Azure AI Foundry Bing grounding integration<br>• Enhanced web search capabilities<br>• Improved `HostedWebSearchTool` implementation<br>• Updated connection-based search functionality |
+| `04.python-agent-framework-aifoundry-file-search.ipynb` | • Updated Azure AI Foundry advanced file search<br>• Enhanced vector store creation and management<br>• Improved document upload and processing workflows<br>• Updated streaming response capabilities for file search |
+
 ## 2025-10-03
 
 ### Fixed GraphViz Integration
