@@ -1,5 +1,27 @@
 # Change Log - Agent Framework Samples
 
+## 2025-10-08
+
+### Added Evaluation and Tracing Components
+
+**Summary:** Introduced comprehensive evaluation and tracing capabilities for agent development with DevUI visualization and observability features
+
+#### Sample Code and Documentation
+
+***Folder*** - *08.EvaluationAndTracing*
+
+| Component | Content Added |
+|-----------|---------------|
+| `README.md` | • Comprehensive tutorial on evaluation and tracing<br>• DevUI setup and usage instructions<br>• Observability configuration guide<br>• Key features and benefits documentation |
+
+***Folder*** - *08.EvaluationAndTracing/python*
+
+| Sample | Implementation |
+|--------|----------------|
+| `basic_agent_workflow_devui/` | • Basic agent workflow with DevUI integration<br>• Real-time session visualization example<br>• Interactive debugging demonstration |
+| `multi_workflow_ghmodel_devui/` | • Multi-agent workflow with DevUI support<br>• Complex interaction pattern visualization<br>• GitHub Models integration with monitoring |
+| `tracer_aspire/` | • Observability and logging configuration<br>• Step-by-step execution tracing<br>• Python logging framework integration |
+
 ## 2025-10-07
 
 
